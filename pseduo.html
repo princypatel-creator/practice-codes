@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS  Structural Selectors</title>
+        <style>
+            h2{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 36px;
+                color: #0d2e09;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #a2bace;
+            }
+            ol li:first-child{
+                color: red;
+            }
+            ol li:last-child{
+                color: rgb(223, 235, 212);
+                background-color: #0d2e09;
+                width: 100px;
+            }
+          
+            p:nth-child(odd){
+                color: blue;
+                font-size: 20px;
+                background-color: #d3d3d3;
+                border-right: 6px solid black;
+            }
+                p:nth-child(even){
+                    color: green;
+                    font-size: 20px;
+                    background-color: #d3d3d3;
+                    border-left: 6px solid black;
+                }
+                .container-demo:only-child{
+                    color: purple;
+                    font-size: 30px;
+                    background-color: #d3d3d3;
+                   border-right: none;
+                   border-radius: 25px;
+                   padding: 12px;
+                }
+                .back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+            </style>
+    </head>
+    <body>
+        <a href="index.html" class="back-btn">Return to back</a>
+        <h2>CSS  Structural Selectors</h2>
+        <h3>first child,second child</h3>
+        <ol>
+            <li>first-child</li>
+            <li>second-child</li>
+            <li>third-child</li>
+        </ol>
+        <div>
+            <p>  this is first para.</p>
+            <p>  this is second para.</p>
+             <p>  this is third para.</p>   
+        <p>  this is fourth para.</p>
+        <p>  this is fifth para.</p>
+        </div>
+        <div >
+            <p class="container-demo">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </body>
+</html>
