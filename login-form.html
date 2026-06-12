@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Sign Up</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 21px;
+            color:rgb(128, 128, 7);
+            background-color: antiquewhite;
+        }
+        .back-btn{
+    background-color:#db7373;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+input{
+    width:153px;
+    height:34px;
+    border-bottom: 4px solid salmon;
+    background-color:rgb(140, 140, 204);
+}
+.btn{
+    padding:4px;
+    border: 3px solid rgb(201, 39, 39);
+    background-color: rgb(185, 108, 108);
+    font-size: 14px;
+    border-radius: 4px;
+    margin:12px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn"> Login form</a>
+<h3>Video 49</h3>
+    <h2>ChiPi Technologies </h2>
+<h2>Login Form</h2>
+    <form action="#" method="POST">
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required>
+        </p>
+
+        <p>
+            <label for="confirm-password">Confirm Password:</label><br>
+            <input type="password" id="confirm-password" name="confirm_password" required>
+        </p>
+
+        <p>
+            <label for="role">Select Your Role:</label><br>
+            <select id="role" name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="student">Student</option>
+                <option value="faculty">Faculty</option>
+            </select>
+        </p>
+
+        <p>
+            <input type="button"  class="btn" value="Sign Up">
+           <br> <input type="reset" class="btn" value="Reset">
+          <br>  <input type="submit" class="btn" value="Submit">
+        </p>
+    </form>
+
+    <hr>
+    
+    <footer>
+        <p>&copy; ChiPi Technologies - Affordable Education For All</p>
+    </footer>
+
+</body>
+</html>
