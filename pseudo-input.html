@@ -1,0 +1,75 @@
+<html>
+<head>
+    <title> from validation input pseudo classes </title>
+    <style>
+fieldset{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #61b9cf;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.read-only-demo {
+     background-color: #7896d1;
+     color: #4b5563;
+     border-color: #082e68;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: not-allowed; }
+
+.read-write-demo {
+     background-color: #86b1ce; 
+        color: #111827;
+        padding: 10px;
+        border-radius: 5px;
+        border-color: #081d3b; }
+
+.optional-demo:placeholder-shown {
+     background-color: #f3f4f6; 
+        color: #6b7280;
+        padding: 10px;
+        border-radius: 5px;
+        border-left: 6px solid #9ca3af;
+        border-color: #1856b3; }
+
+.submit-btn {
+     width: 100%;
+     background-color: #3b82f6;
+     color: white;
+     border: none;
+     padding: 10px;
+     border-radius: 5px;
+     font-size: 16px;
+     cursor: pointer; }
+.back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+    </style>
+    </head>
+    <body>
+        <a href="index.html" class="back-btn">Return to Back</a>
+        <fieldset>
+        <h2> from validation input pseudo classes </h2>
+      
+        <br>
+            <h3> :read-only </h3>
+        <label for="referral">Referral Code:</label>
+        <input type="text" id="referral" name="referral" class="read-only-demo" value="REF12345" readonly>
+        <br>
+        <h3> :read-write </h3>
+        <label for="comment">Comment:</label>
+        <input type="text" id="comment" name="comment" class="read-write-demo" placeholder="you can write here">
+     <h3>placeholder shown</h3>
+        <input type="text" placeholder="Enter your name" class="optional-demo">
+
+        <br>
+        <br>
+        <button type="submit" class="submit-btn">Submit</button>
+        </fieldset>
+    </body>
