@@ -1,0 +1,44 @@
+<html>
+    <head></head>
+    <style>
+       .grid-container-numbers {
+  display: grid;
+  grid-template-columns: 80% 20%; 
+  grid-template-rows: 20% 50% 30%; 
+  gap: 10px;
+  text-align:center;
+  
+  height: 100vh;
+}
+.header-num {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: -1; 
+  background-color: #3498db;
+}
+.main-num {
+  grid-row: 2 /3;   
+  grid-column: 1 / -2;
+  background-color: #2ecc71;
+}
+.sidebar-num {
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+  background-color: #e67e22;
+}
+.footer-num {
+  grid-row: 3/ 3;
+  grid-column: 1/4 ; 
+  background-color: #9b59b6;
+}
+        </style>
+        <body>
+        <div class="grid-container-numbers">
+  <div class="header-num"><h2>header section</h2>Header (Line 1 to -1)</div>
+  <div class="main-num"><h2>main section</h2>Main Content (Col 1 to -2 <br>Row 2 to 3)</div>
+  <div class="sidebar-num"><h2>sidebar section</h2>Sidebar (Col 2 to 3 row from 1 to 4)</div>
+  <div class="footer-num"><h2>footer section</h2>Footer (Spans all columns)</div>
+</div>
+            </body>
+        </html>
