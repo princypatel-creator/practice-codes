@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Attribute Selector Tutorial</title>
+<style>
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+div, a {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 8px;
+    text-decoration: none;
+} 
+a[target] {
+    background-color: #f0f0f0;
+    border-left: 5px solid #007bff;
+}
+[data-toggle="yes"] {
+    background-color: lightgreen;
+    color: darkgreen;
+    font-weight: bold;
+} 
+a[href^="https"] {
+    color: rgb(31, 105, 31);
+    font-weight: bold;
+}
+a[href$=".pdf"] {
+    background-color: #a51212;
+    color: #f1ebeb;
+    border-radius: 14px;
+}
+input[type="text"] {
+    border: 2px solid #007bff;
+    padding: 5px;
+    border-radius: 4px;
+}
+input[type="password"] {
+    border: 2px solid #dc3545;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #f8d7da;
+}
+input[type="email"] {
+    border: 2px solid #28a745;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #d4edda;
+}
+.back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+</style>
+</head>
+<body>
+<a href="index.html" class="back-btn">Return to back</a>
+    <h2>CSS Attribute Selector Demo</h2>
+
+    <p>Targeting presence of target attribute:</p>
+    <a href="https://www.google.com" target="_blank">Google (Opens in new tab)</a><br>
+    <a href="https://www.wikipedia.org">Wikipedia (Opens in same tab)</a><br><br>
+
+    <p>Targeting exact dynamic data attributes:</p>
+    <div data-toggle="yes">This div has data-toggle set to "yes"</div>
+    <div data-toggle="no">This div has data-toggle set to "no"</div>
+    <div>This div has no dynamic toggle attribute</div><br>
+
+    <p>Targeting links starting with safe protocol:</p>
+    <a href="https://example.com">Secure Link (HTTPS)</a><br>
+    <a href="http://example.com">Unsecure Link (HTTP)</a><br><br>
+
+    <p>Targeting specific file types using extensions:</p>
+    <a href="document.pdf">Download User Manual (PDF)</a><br>
+    <a href="image.png">View Logo (PNG)</a>
+<h2> input elements</h2>
+    <input type="text" placeholder="Text input"><br>
+    <input type="email" placeholder="Email input"><br>
+    <input type="password" placeholder="Password input"><br>
+
+</div>
+</body>
+</html>
