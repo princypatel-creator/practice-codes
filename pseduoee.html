@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>Pseudo element</title>
+    <style>
+        .line-demo::first-line {
+            background-color: rgb(223, 154, 65);
+            padding: 2px;
+            color: rgb(240, 240, 228)
+        }
+
+        .line-demo {
+            background-color: antiquewhite;
+        }
+
+        .letter-demo::first-letter {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 29px;
+        }
+
+        .letter-demo {
+            background-color: aqua;
+        }
+
+        .selection-demo {
+            background-color: rgb(155, 216, 114);
+            padding: 2px 1px 32px 44px;
+            font-size: 23px
+        }
+
+        .selection-demo::selection {
+            background-color: blanchedalmond;
+
+            color: brown;
+            padding: 23px;
+        }
+
+        body {
+            background-color: rgb(243, 211, 168);
+            text-align: center;
+        }
+
+        .details-explain::details-content {
+            background-color: yellowgreen;
+            border-left: 2px solid green;
+            font-size: 23px;
+        }
+
+        .details-container {
+            background-color: aqua;
+            padding: 23px;
+            border-radius: 12px
+        }
+
+        .file-selector-section {
+            background-color: rgb(204, 137, 37);
+            border-radius: 13px;
+            padding: 12px;
+        }
+
+        .file-selector::file-selector-button {
+            background-color: rgb(177, 177, 228);
+            font-size: 22px;
+        }
+
+        .form-section {
+            background-color: cadetblue;
+            padding: 23px;
+            color: rgb(243, 233, 220);
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        input {
+            width: 340px;
+            height: 43px;
+            border-radius: 4px;
+        }
+
+        .placeholder-demo::placeholder {
+            color: darkgreen;
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        .back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-btn">Return to back</a>
+    <h2> video -20</h2>
+    <h2>CSS Pseudo Element</h2>
+
+    <h4>::first-letter</h4>
+    <div class="line-demo">
+        <p>CSS pseudo-elements are used to style specified parts of an element. For example, you can use the
+            ::first-letter pseudo-element to change the first letter of a paragraph.</p>
+        <p>In the example below, the first letter of the paragraph is styled to be element.</p>
+    </div>
+    <h3>::first-letter</h3>
+    <div class="letter-demo">
+
+        <p>CSS pseudo-elements are used to style specified parts of an element. For example, you can use the
+            ::first-letter pseudo-element to change the first letter of a paragraph.</p>
+        <p>In the example below, the first letter of the paragraph is styled to be element.</p>
+        <p>CSS pseudo-elements are used to style specified parts of an element. </p>
+    </div>
+    <h3>::selection</h3>
+    <div class="selection-demo">
+
+        <p>CSS pseudo-elements are used to style specified parts of an element. For example, you can use the ::selection
+            pseudo-element to change the color of the text when it is selected.</p>
+        <p>In the example below, the text will turn red when it is selected.</p>
+    </div>
+    <h1> video 22</h1>
+    <h2> ::details</h2>
+    <div class="details-container">
+        <details class="details-explain">
+            <summary> Syallbus</summary>
+            <div>
+                <ol>
+                    <li>java</li>
+                    <li>C</li>
+                    <li>html</li>
+                    <li>javascript</li>
+                </ol>
+            </div>
+            <hr>
+        </details>
+    </div>
+    <section class="file-selector-section">
+        <h2> file selector</h2>
+        <input type="file" class="file-selector">
+    </section>
+    <hr><br>
+    <div class="form-section">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="enter your name" class="placeholder-demo"><br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="enter your email here" class="placeholder-demo">
+        </form>
+    </div>
+</body>
+
+</html>
