@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Group Selector Tutorial - ChiPi Technologies</title>
+ <style>
+   body{
+    background-color: #f7d5d5;
+   }
+h1, h2, p {
+    color: red;
+}
+h2, p {
+    color: blue;
+    font-size: 18px;
+}
+ 
+ h2, span {
+    font-size: 34px;
+    color: rgb(18, 197, 18);
+    font-weight: bold;
+}
+.back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-btn">Return to Back</a>
+    <h1>What is Group Selector</h1>
+    <p>Paragraph 1 (This will turn Blue due to the override rule).</p>
+
+    <h2>Heading Two (Will be Blue and 34px large)</h2>
+    <p>Paragraph 2 (This will turn Blue).</p>
+
+    <h2>Another Heading Two</h2>
+    <p>Paragraph 3 (This will turn Blue).</p>
+
+    <h1>Another What is Group Selector Heading</h1>
+    
+    <span>This span text will be 34px large.</span>
+    <h2>Heading Two Again</h2>
+    <p>Paragraph 4 (This will turn Blue).</p>
+
+</body>
+</html>
