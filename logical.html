@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logical Pseudo classes</title>
+    <style>
+        .is-ul .is-li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        .is-ul .is-li:nth-child(2n) {
+            background-color: lightblue;
+        }
+
+        .is-ul .is-li:nth-child(2n+1) {
+            background-color: lightcoral;
+        }
+
+        .demo-not {
+            background-color: lightgreen;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .demo-not .not-demo:not(.not-special) {
+            color: rgb(236, 15, 15);
+            font-size: 19px;
+            text-align: center;
+        }
+
+        .has-demo {
+            background-color: lightyellow;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .has-demo {
+            border: 2px solid orange;
+        }
+
+        .has-demo:has(p) div p {
+            color: teal;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        :where(.where-demo .where-li) {
+            background-color: rgb(236, 148, 148);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            border-left: 5px solid rgb(221, 15, 15);
+        }
+        .back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+    </style>
+</head>
+
+<body>
+    <a href="index.html" class="back-btn"> Return to Back</a>
+    <h1>Logical Pseudo classes</h1>
+    <h2>:is()</h2>
+    <section>
+        <span class="is-span">
+            <ul class="is-ul">
+                <li class="is-li">Item 1 using :is()</li>
+                <li class="is-li">Item 2 using :is()</li>
+                <li class="is-li">Item 3 using :is()</li>
+                <li class="is-li">Item 4 using :is()</li>
+            </ul>
+        </span>
+        <div class="demo-not">
+            <h2>:not()</h2>
+            <p class="not-demo">this is :not()</p>
+            <p class="not-demo not-special"> this is not styled .</p>
+        </div>
+        <div class="has">
+            <h2>:has()</h2>
+            <div class="has-demo">
+                <p>This is a div with a span inside.</p>
+                <div>
+                    <p>this is child of has()</p>
+                </div>
+            </div>
+        </div>
+        <aside class="where-demo">
+            <h2>:where()</h2>
+            <ul class="where-nav">
+                <li class="where-li">Item 1 using :where()</li>
+                <li class="where-li">Item 2 using :where()</li>
+                <li class="where-li">Item 3 using :where()</li>
+            </ul>
+        </aside>
+    </section>
+</body>
+
+</html>
