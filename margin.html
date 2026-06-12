@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin Types Demo</title>
+   <style>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #2f3640;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 50px; }
+
+.container {
+    background-color: #dfe4ea; 
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+.box {
+    background-color: #ffffff;
+    border: 2px solid #2ecc71; 
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.box h3 {
+    color: #27ae60;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+code {
+    background-color: #f1f2f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: #e74c3c;
+}
+.box-individual {
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+.box-four-values {
+    margin: 30px 5px 60px 50px;
+}
+.box-two-values {
+    margin: 40px 20px;
+}
+.box-uniform {
+    margin: 30px;
+}
+.box-auto {
+    width: 70%; 
+    margin: 40px auto;
+    border-color: #9b59;
+}
+.box-auto h3 { color: #8e44ad; }
+
+.box-logical {
+    margin-block: 35px;  
+    margin-inline: 15px; 
+}
+.back-btn{
+    background-color:#81bd8f;
+    font-size: 21px;
+    outline:4px solid green;
+    border-radius: 5px;
+}
+   </style>
+</head>
+<body>
+<a href="index.html" class="back-btn">Return to back</a>
+    <h1>Mastering CSS Margin</h1>
+    <p class="subtitle">Margin creates empty space <em>outside</em> an element's border to separate it from others.</p>
+
+    <div class="container">
+        
+        <div class="box box-individual">
+            <h3>1. Individual Sides</h3>
+            <p>Using <code>margin-top</code>, <code>margin-bottom</code>, etc. explicitly to push specific sides.</p>
+        </div>
+
+        <div class="box box-four-values">
+            <h3>2. Four-Value Shorthand</h3>
+            <p>Clockwise order: <strong>Top, Right, Bottom, Left (TRBL)</strong>. Look at the asymmetric spacing around me.</p>
+        </div>
+
+        <div class="box box-two-values">
+            <h3>3. Two-Value Shorthand</h3>
+            <p>First value controls <strong>Top/Bottom</strong>, second controls <strong>Left/Right</strong>.</p>
+        </div>
+
+        <div class="box box-uniform">
+            <h3>4. Uniform Margin</h3>
+            <p>One single value applies equal spacing to <strong>all four sides</strong> simultaneously.</p>
+        </div>
+
+        <div class="box box-auto">
+            <h3>5. Horizontal Centering (margin: auto)</h3>
+            <p>By giving a block element a fixed width and setting <code>margin: 0 auto;</code>, the browser balances the left and right space perfectly to center it.</p>
+        </div>
+
+        <div class="box box-logical">
+            <h3>6. Modern Logical Properties</h3>
+            <p>Uses <code>margin-block</code> (Top/Bottom) and <code>margin-inline</code> (Left/Right). The modern standard for multilingual sites.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
