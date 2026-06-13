@@ -1,0 +1,56 @@
+<html>
+<head></head>
+<style>
+    .item{
+        background-color:bisque;
+        padding:12px;
+        margin:4px;
+    }
+    .grid-container{
+       display:grid;
+        place-items:start end;
+        padding:12px;
+        margin:16px;
+        background-color: rgb(178, 226, 44);
+    }
+    .grid-container1{
+       display:grid;
+        place-items:center;
+        padding:12px;
+        margin:16px;
+        background-color: rgb(216, 248, 126);
+    }
+    .grid-container2{
+       display:grid;
+        place-items:stretch;
+        padding:12px;
+        margin:16px;
+        background-color: rgb(178, 226, 44);
+    }
+
+    </style>
+    <body>
+        <div>
+            <h2>items start end</h2>
+            <div class="grid-container">
+                <div class="item">Box1</div>
+                <div class="item">Box2</div>
+                <div class="item">Box3</div>
+                <div class="item">Box4</div>
+            </div>
+            <h2> items center</h2>
+             <div class="grid-container1">
+                <div class="item">Box1</div>
+                <div class="item">Box2</div>
+                <div class="item">Box3</div>
+                <div class="item">Box4</div>
+            </div>
+            <h2> items stretch</h2>
+             <div class="grid-container2">
+                <div class="item">Box1</div>
+                <div class="item">Box2</div>
+                <div class="item">Box3</div>
+                <div class="item">Box4</div>
+            </div>
+        </body>
+        </html>
