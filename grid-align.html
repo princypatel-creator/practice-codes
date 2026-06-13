@@ -1,0 +1,58 @@
+<html>
+<head></head>
+<style>
+    .grid-item{
+       
+        background-color: beige;
+        padding: 12px;
+    }
+    .align-container{
+        display:grid;
+        grid-template-columns: 1fr auto ;
+        align-items:center;
+        background-color:rgb(255, 158, 31);
+        padding:12px;
+        gap:12px;
+    }
+     .align-container1{
+        display:grid;
+        grid-template-columns:repeat(2, 230px) ;
+        gap:12px;
+        padding:12px;
+        align-items:stretch;
+        background-color: rgb(51, 105, 83);
+    }
+     .align-container2{
+        display:grid;
+        grid-template-columns: 1fr   auto ;
+        gap:12px;
+      align-items:end;
+        background-color: rgb(143, 209, 20);
+        padding:12px;
+    }
+    </style>
+    <body>
+        <h2> align center</h2>
+        <div class="align-container">
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+</div>
+<br>
+<h2> align stretch</h2>
+  <div class="align-container1">
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+</div>
+<h2> align to end</h2>
+  <div class="align-container2">
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+<div class="grid-item">item1</div>
+</div>
+    </body>
+    </html>
