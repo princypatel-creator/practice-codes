@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+         background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+       background-color:rgb(211, 181, 145);
+        }
+h2{
+  text-decoration:underline;
+  font-size:26px;
+  font-family: 'Times New Roman', Times, serif;
+}
+  
+ label{
+          font-family: cursive;
+          font-size:16px;
+          font-weight: bold;
+        }
+  .container{
+    background-color: beige;
+    justify-content:center;
+    margin-top:156px;
+   text-align:center;
+   padding:12px;
+    font-size:16px;
+   border:6px double rgb(190, 190, 47);
+   box-shadow: 1px 2px 3px 2px rgb(155, 184, 97,0.5)
+  }
+  .calculation{
+    padding: 12px;
+   box-shadow: inset 0 0 15px 5px rgba(230, 194, 93, 0.3);
+   width:219px;
+   margin-left:82px;
+   text-align: center;
+}
+input{
+  border:3px solid rgb(211, 192, 46);
+  background-color: beige;
+  font-weight:bold;
+  color:rgb(144, 126, 9);
+  font-size:17px;
+}
+ button{
+  background-color:burlywood;
+  border:2px solid rgb(207, 127, 23);
+  font-size:14px;
+ }
+#result{
+  background-color: bisque;
+  width:63px;
+  text-align:center;
+}
+ </style>
+</head>
+<body>
+<div class="container">
+  <h2> Calculator</h2><label for="num1">Enter the  first number:</label>
+  <input type="text" id="num1" placeholder="Enter the first number"><br><br>
+  <label for="num2">Enter the  second number:</label>
+  <input type="text" id="num2" placeholder="Enter the second number"><br><br>
+     <div class="calculation"> 
+      <button onclick="addnumbers()">Sum</button>
+       <button onclick="differencenumbers()">Subract</button>
+      <button onclick="multiplynumbers()">Multiply</button>
+     <br><br>
+     <label for="result">Result:</label>
+      <input  type="text" id="result" placeholder="result">
+    </div>
+</div>
+ <script>
+  function addnumbers(){
+    let num1=parseFloat(document.getElementById('num1').value);
+    let num2=parseFloat(document.getElementById('num2').value);
+    let sum = num1 + num2;
+    document.getElementById('result').value = sum ;
+  }
+  function differencenumbers(){
+    let num1=parseFloat(document.getElementById('num1').value);
+    let num2=parseFloat(document.getElementById('num2').value);
+    let subtract = num1 - num2;
+    document.getElementById('result').value = subtract;
+  }
+  function multiplynumbers() {
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+    let multiply = num1 * num2;
+    document.getElementById('result').value = multiply;
+}
+ </script>
+</body>
+</html>
