@@ -1,0 +1,62 @@
+<html>
+    <head></head>
+    <style>
+       div{
+        width: 123px;
+        height:56px;
+        margin:5px;
+        background-color:blue;
+       }
+.element:hover {
+  transform: translate(50px, 100px);
+  background-color:aquamarine
+}
+.element-x:hover {
+    background-color:blanchedalmond;
+  transform: translateX(300px);  
+}
+.element-y:hover {
+    background-color:brown;
+  transform: translateY(10px); 
+}
+.container{
+    background-color: blanchedalmond;
+    padding:23px;
+    height:127px;
+}
+.rotate:hover {
+  transform: rotate(45deg);
+  background-color:yellow;
+}
+.reverse-rotate:hover {
+  transform: rotate(-90deg);
+  background-color:green;
+}
+.skew:hover {
+    background-color: crimson;
+  transform: skew(20deg, 10deg);
+}
+.element-3d:hover {
+    background-color: chocolate;
+  transform: perspective(500px) translateZ(50px) rotateY(45deg);
+}
+    </style>
+    <body>
+        <h2>translate</h2>
+          <div class="element">box1</div>
+          <div class="element-x">box2</div>
+          <div class="element-y">box3</div>
+      <h2>rotate</h2>  <div class="container">
+        <div class="rotate">rotate</div>
+        <div class="reverse-rotate">reverse</div>
+      </div>
+   <div class="skew">
+    
+    <div class="skew">skew</div>
+   </div>
+
+   <div class="element-3d">
+    element 3d rotate
+   </div>
+        </body>
+</html>
