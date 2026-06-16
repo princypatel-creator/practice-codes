@@ -1,0 +1,56 @@
+<html>
+
+<head></head>
+<style>
+    .box1 {
+        width: 186px;
+        height: 56px;
+        z-index: 3;
+        position: absolute;
+        text-align: center;
+        font-size: 23px;
+        background-color: rgb(136, 136, 205);
+
+    }
+
+    .box2 {
+        width: 186px;
+        height: 56px;
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        font-size: 23px;
+        top: 80px;
+        left: 100px;
+        background-color: rgb(62, 176, 54);
+    }
+
+    .box3 {
+        width: 186px;
+        height: 56px;
+        text-align: center;
+        font-size: 23px;
+        position: absolute;
+        z-index: 1;
+        top: 90px;
+        right: 100px;
+        background-color: rgb(210, 98, 42);
+    }
+    .back-btn{
+        text-decoration:none;
+        padding:9px;
+        background-color: rgb(206, 198, 169);
+    }
+</style>
+
+<body>
+    <a href="index.html" class="back-btn"> return back</a>
+    <div class="container">
+        <h2> On the basis of z index:</h2>
+        <div class="box1">z index 3</div>
+        <div class="box2">z index 2</div>
+        <div class="box3">z index 1</div>
+    </div>
+</body>
+
+</html>
