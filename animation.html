@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving and Color Changing Animation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e24;
+        }
+
+        .animated-box {
+            width: 80px;
+            height: 80px;
+            border-radius: 12px;
+            animation: MovingColor 4s ease-in-out infinite alternate;
+
+            box-shadow: 0 10px 20px rgba(153, 100, 100, 0.3);
+        }
+
+        @keyframes MovingColor {
+            0% {
+                transform: translateX(0) rotate(0deg);
+                background-color: #ff6b6b;
+            }
+
+            50% {
+                background-color: #845ef7;
+            }
+
+            100% {
+                transform: translateX(420px) rotate(360deg);
+                background-color: #06d6a0;
+            }
+        }
+
+        .box {
+            width: 99px;
+            height: 99px;
+            margin-top: 134px;
+            box-shadow: 0px 2px 4px red;
+            animation: boxcicle 4s ease-in-out infinite;
+        }
+
+        @keyframes boxcicle {
+            0% {
+                transform: translate3d(0) rotate3d(0deg);
+                background-color: #ff6b6b;
+                width: 99px;
+                height: 99px;
+            }
+
+            50% {
+                border-radius: 34px;
+            }
+
+            100% {
+                background: #06d6a0;
+                border-radius: 55px;
+                transform: translateX(230px) rotate(180deg);
+            }
+        }
+        .bak-btn{
+            text-decoration: none;
+            padding:12px;
+            background-color: yellow;
+            color:brown;
+        }
+    </style>
+</head>
+
+<body>
+ <a href="index.html" class="back-btn"> Return to Back</a>
+    <div class="stage">
+        <div class="animated-box"></div>
+
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
