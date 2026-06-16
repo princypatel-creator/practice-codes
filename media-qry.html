@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head></head>
+<style>
+    body {
+        font-size: 46px;
+        line-height: 1.6;
+        margin: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    .box {
+        width: 600px;
+        height: 150px;
+        background-color: green;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 300px) {
+        body {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (min-width: 301px) and (max-width: 600px) {
+        body {
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        .box {
+            width: 800px;
+            background-color: aqua;
+            color: black;
+        }
+    }
+
+    @media screen and (min-resolution: 301dpi) {
+        .box {
+            background-color: yellow;
+            color: black;
+            font-size: 38px;
+        }
+    }
+
+    @media screen and (max-resolution: 300dpi) {
+        .box {
+            background-color: purple;
+        }
+    }
+    .back{
+        text-decoration:none;
+        padding:9px;
+        background-color:beige;
+    }
+</style>
+
+<body>
+<a href="index.html" class="back-btn"> Back</a>
+    <h1>CSS Media Queries Explained</h1>
+
+    <p>This is a paragraph of text meant to showcase how font sizes adapt automatically to different device screen
+        sizes.</p>
+
+    <p>Resize your browser window or use your browser's inspect tool to simulate mobile screens and watch the layout
+        change!</p>
+
+    <div class="box">
+        This is a box that changes depending on the screen query.
+    </div>
+
+</body>
+
+</html>
